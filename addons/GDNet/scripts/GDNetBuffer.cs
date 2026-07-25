@@ -1,4 +1,5 @@
 using Godot;
+using Godot.NativeInterop;
 using System;
 
 [GlobalClass]
@@ -22,6 +23,8 @@ public partial class GDNetBuffer : RefCounted
 		Int16,
 		Int32,
 		Int64,
+
+		String,
 
 		UInt8,
 		UInt16,
@@ -91,6 +94,9 @@ public partial class GDNetBuffer : RefCounted
 
 		_writers[typeof(byte[])] = (b, v) => { b._WriteVarType(VarType.BytesDynamic); b.WriteBytesDynamic((byte[])v); };
 		_readers[VarType.BytesDynamic] = b => b.ReadBytesDynamic();
+
+		_writers[typeof(string)] = (b, v) => { b._WriteVarType(VarType.String); b.WriteString((string)v); };
+		_readers[VarType.String] = b => b.ReadString();
 
 		_writers[typeof(Vector3)] = (b, v) => { b._WriteVarType(VarType.Vector3); b.WriteVector3((Vector3)v); };
 		_readers[VarType.Vector3] = b => b.ReadVector3();
