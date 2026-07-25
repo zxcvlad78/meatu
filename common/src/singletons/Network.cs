@@ -4,6 +4,12 @@ public partial class Network : Node
 {
     public static Network Instance { get; private set; }
 
+    public enum Channel: byte
+    {
+        Default = 0,
+        GlobalMessage,
+    }
+
     public override void _Ready()
     {
         Instance = this;
