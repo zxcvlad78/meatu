@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="meatu"
-config/features=PackedStringArray("4.7", "GL Compatibility")
+config/features=PackedStringArray("4.7", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GDNet="*uid://dbr3vod01qpcy"
 
 [display]
 
@@ -22,6 +26,10 @@ window/stretch/aspect="expand"
 [dotnet]
 
 project/assembly_name="meatu"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/GDNet/plugin.cfg")
 
 [physics]
 
