@@ -43,7 +43,7 @@ anchor_left = 0.059895832
 anchor_top = 0.41666666
 anchor_right = 0.6215278
 anchor_bottom = 0.9907407
-text = "127.0.0.1"
+text = "127.0.0.1:7856"
 metadata/_edit_use_anchors_ = true
 
 [node name="TextEdit" type="Label" parent="Control" unique_id=1253420205]

@@ -55,7 +55,7 @@ public partial class GlobalChat : Node
 
         Message broadcastMessage = new(userId, message);
 
-        _rpc.Invoke(BroadcastMessageToAllRpc, sender, broadcastMessage);
+        _rpc.Invoke(BroadcastMessageToAllRpc, broadcastMessage);
     }
 
     [GDNetRpc(Permission = Permission.ServerOrAuth, Channel = (int)Network.Channel.GlobalMessage)]
