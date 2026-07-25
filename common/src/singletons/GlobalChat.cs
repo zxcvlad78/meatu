@@ -1,7 +1,7 @@
 using Godot;
 using System;
-using static GDNet;
 
+namespace MeatU {
 
 public partial class GlobalChat : Node
 {
@@ -63,5 +63,7 @@ public partial class GlobalChat : Node
     {
         OnMessageReceived?.Invoke(message);
     }
+
+}
 
 }

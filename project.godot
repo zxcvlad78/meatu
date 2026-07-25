@@ -11,12 +11,15 @@ config_version=5
 [application]
 
 config/name="meatu"
+run/main_scene="uid://ca70q7mjxr0nm"
 config/features=PackedStringArray("4.7", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GDNet="*uid://dbr3vod01qpcy"
+Network="*uid://brj7totxufo1e"
+GlobalChat="*uid://b337qs3d82l2g"
 
 [display]
 

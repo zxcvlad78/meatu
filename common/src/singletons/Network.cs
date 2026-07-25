@@ -1,5 +1,7 @@
 using Godot;
 
+namespace MeatU;
+
 public partial class Network : Node
 {
     public static Network Instance { get; private set; }

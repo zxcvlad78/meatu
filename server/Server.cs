@@ -1,6 +1,0 @@
-namespace MeatU
-{
-
-
-
-} // namepsace MeatU
